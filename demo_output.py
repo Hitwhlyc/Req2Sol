@@ -8,8 +8,8 @@ import itertools
 from tqdm import tqdm
 
 
-fine_tune_path = "/data/yimin/GongBU/finetune_output/22S130471/ft_task_13/checkpoint-84000"#此处放入微调的路径
-base_model = "/data/yimin/GongBU/models/Mistral-7B-Instruct-v0.2" #此处放入基模型路径
+fine_tune_path = ""#此处放入微调的路径
+base_model = "" #此处放入基模型路径
 def extract_test_after_colon(sentence):
     target_str = "### Response:"
     pattern = rf'{re.escape(target_str)}(.*)'
