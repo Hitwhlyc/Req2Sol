@@ -16,7 +16,7 @@ For all base models, we adopted the LoRA fine-tuning method for instruction fine
 - [Meta-Llama-3-8B](https://modelscope.cn/models/LLM-Research/Meta-Llama-3-8B)
 - [Yi-6B](https://modelscope.cn/models/01ai/Yi-6B)
 - [Mistral-7B-Instruct-v0.2](https://modelscope.cn/models/AI-ModelScope/Mistral-7B-Instruct-v0.2)
-## Dataset acquisition method
+### Dataset acquisition method
 The design of prompt words plays an important role in this study, as it determines the quality of the generated question and answer pairs. For this purpose, we designed multiple prompt words for verification and manually compared the corresponding results. Finally, we selected the group of prompt words with the best manual evaluation effect for generating instruction fine-tuning question answer pairs. The Chinese content has been translated into English. <br>
 The training set data example for instruction fine-tuning is as follows: <br>
 
@@ -27,10 +27,19 @@ The training set data example for instruction fine-tuning is as follows: <br>
         "output": "制冷制热"
     },
 ```
+The relevant question and answer pairs generated through the above operation can be used for preliminary instruction fine-tuning. However, due to the limited number of scenarios and related demand points in the industrial assembly field, it cannot meet the needs of large-scale fine-tuning. Moreover, sentiment analysis using large language models is an important task, but high performance often depends on the size and quality of the training data. <br>
+Therefore, we referred to Jason Wei's work  and conducted data augmentation based on EDA,effectively improving the performance of text classification tasks.  <br>
+- [EDA](https://github.com/jasonwei20/eda_nlp) <br>
 
-## Dataset
+Specifically, this study conducted large-scale data augmentation and enhancement on text data through operations such as synonym replacement, random insertion, random swapping, and random deletion. The original small batch data was transformed into a large batch of data, effectively expanding the size of the training data.
+### Dataset
 In this system, we have set up two types of datasets, one is the normal dataset·`./dataset/original_question.json` and enhanced dataset with data augmentation·`./dataset/aug_question.json.json`
+### LoRA download
+LoRA weight can be downloaded through Baidu Netdisk：
+- Bloomz-7b1：[Baidu Netdisk]https://pan.baidu.com/s/1f4XeybVUflwMS_TNlr7yTw?pwd=7jbs)
+- Meta-Llama-3-8B：[Baidu Netdisk]https://pan.baidu.com/s/1f4XeybVUflwMS_TNlr7yTw?pwd=7jbs)
+- Yi-6B：[Baidu Netdisk]https://pan.baidu.com/s/1f4XeybVUflwMS_TNlr7yTw?pwd=7jbs)
+- Mistral-7B-Instruct-v0.2：[Baidu Netdisk]https://pan.baidu.com/s/1f4XeybVUflwMS_TNlr7yTw?pwd=7jbs)
 
-##
 
 
