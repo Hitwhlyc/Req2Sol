@@ -1,12 +1,12 @@
 # air-condition-chat-system
 Examples of personalized recommendations in the field of air conditioning assembly
 # requirements
-python=3.8 
-gradio=4.41.0
-neo4j=5.23.1 
-numpy=1.26.4
-peft=0.12.0 
-torch=2.1.2
+python=3.8 <br>
+gradio=4.41.0 <br>
+neo4j=5.23.1 <br>
+numpy=1.26.4 <br>
+peft=0.12.0 <br>
+torch=2.1.2 <br>
 # Instructions
 需要下载基模型并结合我们给出的lora微调信息进行融合，将lora微调文件路径放入demo_output.py文件中的第11行,基模型路径放入第13行
 2.  导入知识图谱，并在neo4j_add.py第8行和第9行输入自己的账号和密码，账号密码获取在neo4j创建时即可知。
