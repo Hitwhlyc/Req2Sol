@@ -12,5 +12,5 @@ In the field of industrial assembly, user needs are increasingly intertwined wit
 ## A quick start
 For all base models, we adopted the LoRA fine-tuning method for instruction fine-tuning training to balance computational resources and model performance.
 **Base models**
-
+[Alt](URL "title")
 
