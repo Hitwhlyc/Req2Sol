@@ -10,7 +10,11 @@ torch==2.1.2 <br>
 ## Brief Introduction
 In the field of industrial assembly, user needs are increasingly intertwined with the final product assembly. Currently, the work done in the industry tends to describe specific concepts and related physical facilities in industrial assembly, which makes it difficult to meet the connection between user needs and products. We innovatively associate user needs with products through knowledge graphs, achieving full process control from user needs to industrial product assembly.
 ## A quick start
-For all base models, we adopted the LoRA fine-tuning method for instruction fine-tuning training to balance computational resources and model performance.
+For all base models, we adopted the LoRA fine-tuning method for instruction fine-tuning training to balance computational resources and model performance. <br>
 **Base models**
-[Alt](URL "title")
+[Bloommz-7b1](URL "[Bloommz-7b1](https://modelscope.cn/models/AI-ModelScope/bloomz-7b1)") <br>
+[Meta-Llama-3-8B](URL "[Meta-Llama-3-8B](https://modelscope.cn/models/LLM-Research/Meta-Llama-3-8B)") <br>
+[Yi-6B](URL "[Yi-6B](https://modelscope.cn/models/01ai/Yi-6B)") <br>
+[Mistral-7B-Instruct-v0.2](URL "[Mistral-7B-Instruct-v0.2](https://modelscope.cn/models/AI-ModelScope/Mistral-7B-Instruct-v0.2)") <br>
+
 
